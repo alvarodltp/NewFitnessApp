@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root 'workout#index'
+
+  get 'workout/options'
+
+  get 'workout/results/:workout' => 'workout#results', :as => "results"
+
+  get 'workout_controller/index'
+
+  get 'workout_controller/results'
+
 end

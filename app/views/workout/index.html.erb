@@ -1,0 +1,27 @@
+<div class="container">
+
+<h1>Welcome!</h1>
+<p>Let's build you a perfect workout!</p>
+
+<%= form_tag(workout_options_path, method: "get") do %>
+
+<div class="form-group">
+  <label> What did you workout on <%= (Time.now - 2.days).strftime("%A") %>? </label><br>
+  <%= select_tag(:workout_2, options_for_select(@dropdown_options), {prompt: 'Select Muscle Group'})%>
+</div>
+
+<div class="form-group">
+  <label> What did you workout yesterday? </label><br>
+  <%= select_tag(:workout_1, options_for_select(@dropdown_options), {prompt: 'Select Muscle Group'})%>
+</div>
+
+<div class="form-group">
+  <label> What kind of workout do you want to do? </label><br>
+  <%= select_tag(:type_opt, options_for_select([["Muscle Building", 1], ["HIIT(High Intensity Interval Training", 2]]),
+                {prompt: 'Select Type of Workout'})%>
+</div>
+
+<%= submit_tag("Check Results") %>
+
+<% end %>
+</div>

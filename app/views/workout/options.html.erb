@@ -1,0 +1,8 @@
+<div class="container">
+  <h3> Great! Now let's take a look at the muscle groups you can workout today.</h3>
+  <label>Which one do you feel like doing? I'd suggest doing the muscle group you haven't done in a while.</label>
+
+<% @resulting_workouts.each do |workout| %>
+<li><%= link_to @workout_names[workout],results_path(workout) %></li>
+<% end %>
+</div>

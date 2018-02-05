@@ -1,8 +1,8 @@
 class WorkoutController < ApplicationController
-  before_action :set_body_parts
+  before_action :set_workouts
 
-  def set_body_parts
-    @body_parts = {
+  def set_workouts
+    @workouts = {
         chest_triceps: ['Chest', 'Triceps'],
         back_biceps: ['Back', 'Biceps'],
         shoulders_abs: ['Shoulders', 'Abs'],
@@ -63,23 +63,24 @@ class WorkoutController < ApplicationController
 
     @resulting_workouts = []
 
-    @body_parts.each do |body_parts, groups|
+    @workouts.each do |workout, groups|
       if (groups & exclude_muscle_groups).empty?
-        @resulting_workouts.push(body_parts)
+        @resulting_workouts.push(workout)
       end
     end
   end
 
   def results
+
     workout = params[:workout].to_sym
-    muscle_groups = @body_parts[workout]
+    muscle_groups = @workouts[workout]
     @workout_name = @workout_names[workout]
 
     if workout == :full_body
-      @exercices = Exercise.all.order('RANDOM()').limit(8)
+      @exercises = Exercise.all.order('RAND()').limit(8)
 
     else
-      @exercises = Exercise.where(muscle_group: muscle_groups, high_intensity: false).order('RANDOM()').limit(6)
+      @exercises = Exercise.where(muscle_group: muscle_groups, high_intensity: false).order('RAND()').limit(6)
 
     end
   end

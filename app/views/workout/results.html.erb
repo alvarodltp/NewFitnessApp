@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h3>Time to put in the work!</h3>
+
+  <table style="width:100%">
+    <tr>
+    <th>Exercise</th>
+    <th>Sets</th>
+    <th>Reps</th>
+    <th>Weight</th>
+    <th>Rest Time</th>
+    <th>Notes</th>
+  </tr>
+
+  <% @exercises.each do |exercise| %>
+
+      <tr>
+        <th><%= exercise.name %></th>
+        <td>3-4</td>
+        <td>8-15</td>
+        <td>90 sec</td>
+        <td></td>
+      </tr>
+      <% end %>
+
+  </table>
+</div>

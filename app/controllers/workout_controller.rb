@@ -8,7 +8,7 @@ class WorkoutController < ApplicationController
         shoulders_abs: ['Shoulders', 'Abs'],
         chest: ['Chest'],
         back: ['Back'],
-        arms: ['Arms'],
+        arms: ['Triceps','Biceps'],
         shoulders: ['Shoulders'],
         abs: ['Abs'],
         legs: ['Legs'],
@@ -34,9 +34,11 @@ class WorkoutController < ApplicationController
         ["I didn't workout", :no_workout],
         ["Chest & Triceps", :chest_triceps],
         ["Back & Biceps", :back_biceps],
+        ["Chest & Back", :chest_back],
         ["Shoulders & Abs", :shoulders_abs],
         ["Chest", :chest],
         ["Back", :back],
+        ["Arms", :arms],
         ["Shoulders", :shoulders],
         ["Abs", :abs],
         ["Legs", :legs],
@@ -49,11 +51,12 @@ class WorkoutController < ApplicationController
         no_workout: [],
         chest_triceps: ['Chest', 'Triceps'],
         back_biceps: ['Back', 'Biceps'],
-        shoulders_abs: ['Shoulders', 'Abs'],
-        chest: ['Chest'],
+        chest_back: ['Chest', 'Back'],
+        shoulders_abs: ['Shoulders', 'Abs', 'Chest'],
+        chest: ['Chest', 'Shoulders'],
         back: ['Back'],
-        arms: ['Arms'],
-        shoulders: ['Shoulders'],
+        arms: ['Triceps', 'Chest', 'Biceps', 'Back'],
+        shoulders: ['Shoulders', 'Chest'],
         abs: ['Abs'],
         legs: ['Legs'],
         full_body: ['Full Body'],
@@ -72,11 +75,12 @@ class WorkoutController < ApplicationController
 
   def results
 
-    workout = params[:workout].to_sym
-    muscle_groups = @workouts[workout]
-    @workout_name = @workout_names[workout]
+   workout = params[:workout].to_sym
+   muscle_groups = @workouts[workout]
+   @workout_name = @workout_names[workout]
 
     if workout == :full_body
+
       @exercises = Exercise.all.order('RAND()').limit(8)
 
     else
@@ -85,3 +89,4 @@ class WorkoutController < ApplicationController
     end
   end
 end
+

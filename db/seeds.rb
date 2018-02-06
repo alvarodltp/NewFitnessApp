@@ -61,4 +61,3 @@ exercises = Exercise.create([
                                 {name: "Burpees", muscle_group: "Full body", high_intensity: true},
                                 {name: "Jumping Jacks", muscle_group: "Full body", high_intensity: true},
                             ])
-

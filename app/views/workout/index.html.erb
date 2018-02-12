@@ -1,28 +1,37 @@
-<div class="container">
-<div class="jumbotron">
-<h1 class="display-3">Ready to Workout, <%= current_user.first_name if current_user %>?</h1>
-<p>Let's build you a perfect workout!</p>
+<div class="wide">
+  <div class="container" , id="header-container">
+    <h1 id="header-title">Ready to Workout, <%= current_user.first_name if current_user %>?</h1>
+    <p id="header-subtitle">Let's build you a perfect workout! </p>
+  </div>
 </div>
+
+<br>
 
 <%= form_tag(workout_options_path, method: "get") do %>
 
-<div class="form-group">
-  <label> What did you workout on <%= (Time.now - 2.days).strftime("%A") %>? </label><br>
-  <%= select_tag(:workout_2, options_for_select(@dropdown_options), {prompt: 'Select Muscle Group'})%>
-</div>
+    <div class="jumbotron" id="form">
 
-<div class="form-group">
-  <label> What did you workout yesterday? </label><br>
-  <%= select_tag(:workout_1, options_for_select(@dropdown_options), {prompt: 'Select Muscle Group'})%>
-</div>
+      <div class="form-group">
+        <label> What did you workout on <%= (Time.now - 2.days).strftime("%A") %>? </label><br>
+        <%= select_tag(:workout_2, options_for_select(@dropdown_options), {prompt: 'Select Muscle Group'}) %>
+      </div>
 
-<div class="form-group">
-  <label> What kind of workout do you want to do? </label><br>
-  <%= select_tag(:type_opt, options_for_select([["Muscle Building", 1], ["HIIT(High Intensity Interval Training", 2]]),
-                {prompt: 'Select Type of Workout'})%>
-</div>
+      <div class="form-group">
+        <label> What did you workout yesterday? </label><br>
+        <%= select_tag(:workout_1, options_for_select(@dropdown_options), {prompt: 'Select Muscle Group'}) %>
+      </div>
 
-<%= submit_tag("Check Results") %>
+      <div class="form-group">
+        <label> What kind of workout do you want to do? </label><br>
+        <%= select_tag(:type_opt, options_for_select([["Muscle Building", 1], ["HIIT(High Intensity Interval Training", 2]]),
+                       {prompt: 'Select Type of Workout'}) %>
+      </div>
 
+
+      <%= submit_tag("Check Results") %>
+    </div>
+    </div>
 <% end %>
 </div>
+
+

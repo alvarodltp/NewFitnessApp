@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <a class="navbar-brand" class="navbar-left"><%= image_tag "logo.png", width: 150 %></a>
   <div class="btn-group show">
     <% if current_user %>
@@ -24,13 +24,12 @@
        <%= link_to "Sign In ", new_user_session_path %>
      <% end %>
       </div>
-  </div>
+    </div>
 </nav>
-<br>
 
 <%= yield %>
 
-<%= copyright_generator %>
+<p class="text-center"><%= copyright_generator %></p>
 
 <p class="notice align-center"><%= notice %></p>
 <p class="alert align-center"><%= alert %></p>

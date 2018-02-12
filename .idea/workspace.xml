@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e70efa82-b313-4ebf-a946-596d5c6672bf" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/images/options.jpg" afterPath="$PROJECT_DIR$/app/assets/images/results.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/images/results.jpg" afterPath="$PROJECT_DIR$/app/assets/images/options1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout/index.html.erb" afterPath="$PROJECT_DIR$/app/views/workout/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout/options.html.erb" afterPath="$PROJECT_DIR$/app/views/workout/options.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout/results.html.erb" afterPath="$PROJECT_DIR$/app/views/workout/results.html.erb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +48,8 @@
       <file leaf-file-name="results.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/workout/results.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="390">
+              <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -63,8 +58,8 @@
       <file leaf-file-name="application.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+            <state relative-caret-position="840">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,7 +150,7 @@
               <item name="NewFitnessApp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NewFitnessApp" type="b2602c69:ProjectViewProjectNode" />
@@ -347,12 +342,12 @@
       <updated>1517845991768</updated>
       <workItem from="1517845993159" duration="28472000" />
       <workItem from="1518299017769" duration="12345000" />
-      <workItem from="1518377023660" duration="21058000" />
+      <workItem from="1518377023660" duration="22569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61875000" />
+    <option name="totallyTimeSpent" value="63386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1204" y="23" width="1364" height="1336" extended-state="0" />
@@ -713,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/workout/options.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -729,10 +716,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/workout/results.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
           <folding />
         </state>
       </provider>

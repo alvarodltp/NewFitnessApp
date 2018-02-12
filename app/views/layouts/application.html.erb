@@ -29,10 +29,12 @@
 
 <%= yield %>
 
-<p class="text-center"><%= copyright_generator %></p>
-
+<div class="container">
 <p class="notice align-center"><%= notice %></p>
 <p class="alert align-center"><%= alert %></p>
+</div>
+
+<div class="container" id="footer"><%= copyright_generator %></div>
 
 </body>
 </html>

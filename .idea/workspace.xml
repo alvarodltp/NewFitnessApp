@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e70efa82-b313-4ebf-a946-596d5c6672bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout/results.html.erb" afterPath="$PROJECT_DIR$/app/views/workout/results.html.erb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,9 +47,11 @@
       <file leaf-file-name="results.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/workout/results.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -342,12 +343,12 @@
       <updated>1517845991768</updated>
       <workItem from="1517845993159" duration="28472000" />
       <workItem from="1518299017769" duration="12345000" />
-      <workItem from="1518377023660" duration="22569000" />
+      <workItem from="1518377023660" duration="23994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63386000" />
+    <option name="totallyTimeSpent" value="64811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1204" y="23" width="1364" height="1336" extended-state="0" />
@@ -726,9 +727,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/workout/results.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

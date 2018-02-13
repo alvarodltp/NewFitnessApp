@@ -5,9 +5,10 @@
   </div>
 </div>
 
-<div class="jumbotron" id="form">
-  <table style="width:100%">
-    <tr>
+<br>
+
+  <table class="table" style="width:100%">
+    <tr class="thead-dark">
     <th>Exercise</th>
     <th>Sets</th>
     <th>Reps</th>
@@ -18,17 +19,19 @@
 
   <% @exercises.each do |exercise| %>
 
+
+</div>
       <tr>
         <th><%= exercise.name %></th>
         <td>3-4</td>
         <td>8-15</td>
-        <td class="input-group", class="col-xs-2">
-          <input type="text" class="form-control" aria-describedby="basic-addon2">
-          <span class="input-group-addon" id="basic-addon2"> lb</span>
-        </td>
+        <td class="input-group"</td>
+        <input type="text" class="form-control" aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2">lb</span>
         <td>90 sec</td>
         <td></td>
       </tr>
       <% end %>
+
   </table>
 </div>

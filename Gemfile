@@ -56,3 +56,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'AlvaroDeLaTorre_view_tool', git: 'https://github.com/alvarodltp/AlvaroDeLaTorreViewTool'
+gem 'omniauth-facebook'

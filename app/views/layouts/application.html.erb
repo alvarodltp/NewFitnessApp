@@ -30,11 +30,15 @@
 <%= yield %>
 
 <div class="container">
-<p class="notice align-center"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 <p class="alert align-center"><%= alert %></p>
 </div>
 
-<div class="container" id="footer"><%= copyright_generator %></div>
+<div class="mastfoot">
+<div class="inner">
+  <p><%= copyright_generator %></p>
+</div>
+</div>
 
 </body>
 </html>

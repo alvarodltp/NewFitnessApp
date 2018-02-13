@@ -105,7 +105,6 @@ body,html{
 
 .mastfoot {
   color: black;
-  background-color: #666666;
   text-align: center;
 }
 
@@ -116,4 +115,12 @@ body,html{
 .card-block{
   padding-left: 10px;
   padding-right: 10px,
+}
+
+/*for any of the classes that are nested inside login > */
+
+.login > .card{
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }

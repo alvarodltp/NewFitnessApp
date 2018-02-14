@@ -2,6 +2,7 @@
 <div class="login">
   <div class="card">
     <div class="card-block">
+
       <h2>Log in</h2>
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -23,7 +24,7 @@
           <% end -%>
 
           <div class="form-group">
-            <%= f.submit "Log in", class: 'btn btn-primary' %>
+            <%= f.submit "Log in", class: 'btn btn-primary' %><br>
             <%=render "devise/shared/facebook_link" %>
           </div>
       <% end %>

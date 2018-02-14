@@ -24,10 +24,12 @@
 
           <div class="form-group">
             <%= f.submit "Log in", class: 'btn btn-primary' %>
+            <%=render "devise/shared/facebook_link" %>
           </div>
       <% end %>
 
       <%= render "devise/shared/links" %>
+
     </div>
   </div>
 </div>

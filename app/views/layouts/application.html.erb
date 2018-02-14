@@ -11,23 +11,26 @@
 
 <body>
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '{170303463601221}',
-            cookie     : true,
-            xfbml      : true,
-            version    : '{v2.12}'
+            appId: '{170303463601221}',
+            cookie: true,
+            xfbml: true,
+            version: '{v2.12}'
         });
 
         FB.AppEvents.logPageView();
 
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=170303463601221&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
@@ -36,24 +39,23 @@
   <a class="navbar-brand" class="navbar-left"><%= image_tag "logo.png", width: 150 %></a>
   <div class="btn-group show">
     <% if current_user %>
-     <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <a> Welcome, <%= current_user.name %></a>
-     </button>
-      <div class="dropdown-menu dropdown-toggle-split">
-       <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-       <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-     <% else %>
-       <%= link_to "Sign In ", new_user_session_path %>
-        <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
-     <% end %>
-      </div>
+        <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a> Welcome, <%= current_user.name %></a>
+        </button>
+        <div class="dropdown-menu dropdown-toggle-split">
+          <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+    <% else %>
+        <%= link_to "Sign In ", new_user_session_path %>
+    <% end %>
     </div>
+  </div>
 </nav>
 
 <%= yield %>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert align-center"><%= alert %></p>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 
 <div class="mastfoot">

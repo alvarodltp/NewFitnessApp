@@ -15,6 +15,7 @@ Devise.setup do |config|
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
   config.mailer_sender = 'contact@alvarofitness.com'
+  config.secret_key = 'e58b24d24130d1bce956fb1cb08bce6877015dc707fc03f7352c050b843d73ed5ed4b308834797c5478ffab1d3014a834f6ba76e6010f302d6b2be3c886254d5'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'

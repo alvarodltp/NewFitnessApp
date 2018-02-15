@@ -1,11 +1,9 @@
-<div class="options-banner-section">
+<div class="options-banner-section" style="background-image: url(/assets/options1.jpg);">
   <div class="container vertical-center" , id="header-container">
-    <h1 id="header-title">Great,
-      what do you feel like doing today?</h1>
+    <h1 id="header-title">Great, what do you feel like doing today?</h1>
     <p id="header-subtitle"> </p>
   </div>
 </div>
-
 <div class="jumbotron" id="form">
   <% @resulting_workouts.each do |workout| %>
   <ul><%= link_to @workout_names[workout],results_path(workout) %></ul>

@@ -38,6 +38,7 @@ Rails.application.configure do
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
+  config.secret_key_base = ENV['7b5597e18c7d20cd1f4b96302589916ae94b2df9f44873629d4e7a2fafd936a38128c68b1ba508847eac83f39423927fbd9d569a9aeaaa3385b64ca658872cb0']
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
